@@ -20,7 +20,7 @@ describe( "Formatter", () => {
       expect( Formatter.sanitize( "c" ) ).to.equal( "c" )
       expect( Formatter.sanitize( "!" ) ).to.equal( "" )
       expect( Formatter.sanitize( "ca$@#tching cold" ) ).to.equal( "catching cold" )
-      expect( Formatter.sanitize( "Doin Dishes" ) ).to.equal( "Doin Dishes" )
+      expect( Formatter.sanitize( "Doin' Dishes" ) ).to.equal( "Doin' Dishes" )
       expect( Formatter.sanitize( "Entert*ain(i{ng-Elephan^ts" ) ).to.equal( "Entertaining-Elephants" )
     } )
   } )
